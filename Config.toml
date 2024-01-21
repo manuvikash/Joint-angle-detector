@@ -2,7 +2,7 @@ video_file = "demo.mp4"
 
 [project]
 video_dir = "./videos"
-video_file = "demo.mp4"
+video_file = "v4.mp4"
 result_dir = "./results"
 
 [pose]
