@@ -63,8 +63,12 @@ def plotgraph(filename, jointList):
     except:
         print('Variables could not be found in csv file')
 
+
 def test():
     print("Running properly")
 
-detectAngles('v4.mp4')
-displayJA('v4.mp4')
+# detectAngles('test3.mp4')
+# displayJA('test3.mp4')
+
+plotgraph("test3.mp4", ["Right knee", "Left knee"])
+plotgraph("V2.mp4", ["Right knee", "Left knee"])
