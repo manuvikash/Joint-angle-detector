@@ -58,7 +58,9 @@ def plotgraph(filename, jointList):
         table_select = table[plot_variable_names]
         table_select.columns = [' '.join(col).strip() for col in table_select.columns.values]
         table_select = table_select.set_index(list(table_select)[0])
-        fig = px.line(data_frame=table_select, width=1310, height=699)
+          # Applying moving average smoothing
+        table_smoothed = table_select.rolling(10).mean()  # Adjust window size as needed
+        fig = px.line(data_frame=table_smoothed, width=1310, height=699)
         fig.show()
     except:
         print('Variables could not be found in csv file')
@@ -67,8 +69,7 @@ def plotgraph(filename, jointList):
 def test():
     print("Running properly")
 
-# detectAngles('test3.mp4')
-# displayJA('test3.mp4')
+detectAngles('run.mp4')
+displayJA('run.mp4')
 
-plotgraph("test3.mp4", ["Right knee", "Left knee"])
-plotgraph("V2.mp4", ["Right knee", "Left knee"])
+plotgraph("run.mp4", [ "Right knee", "Left knee"])

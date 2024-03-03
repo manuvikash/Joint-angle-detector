@@ -20,6 +20,7 @@ def extractFeatureAngles(data, featureAngleDict, features):
 def extractFeatureChange(featureAngleDict, featureChangeAngleDict, featureChangeNameDict):
     for key in featureAngleDict:
         changesPositively = True
+        print(featureAngleDict[key])
         for i in range(len(featureAngleDict[key]) - 1): 
             if featureAngleDict[key][i] > featureAngleDict[key][i + 1] and changesPositively:
                 # if previous change and current angle i differ by more than 20 degrees
@@ -57,6 +58,7 @@ data = data[4:]
 featureAngleDict = createFeatureDict(features)
 featureChangeAngleDict = createFeatureDict(features)
 featureChangeNameDict = createFeatureDict(features)
+
 extractFeatureAngles(data, featureAngleDict, features)
 extractFeatureChange(featureAngleDict, featureChangeAngleDict, featureChangeNameDict)
 
