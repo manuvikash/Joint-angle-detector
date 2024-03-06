@@ -151,3 +151,227 @@ Detect pose for video run.mp4
 Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\run.mp4.
 Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
 Saving images and video in D:\Code\CP\results.
+
+
+---------------------------------------------------------------------
+Detect pose for video v2.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\v2.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+Saving csv file in D:\Code\CP\results\v2_BLAZEPOSE_points.csv.
+Done.
+Pose detection took 215.78 s.
+
+
+---------------------------------------------------------------------
+Compute angles for video v2.mp4 
+for ['Right ankle', 'Left ankle', 'Right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Trunk', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Code\CP\results...
+1 persons found.
+Person 0: Computing 2D joint and segment angles.
+Person 0: Saving csv angle file in D:\Code\CP\results\v2_BLAZEPOSE_angles.csv.
+Done.
+Joint and segment computation took 77.81 s.
+
+
+---------------------------------------------------------------------
+Detect pose for video v1.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\v1.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+Saving csv file in D:\Code\CP\results\v1_BLAZEPOSE_points.csv.
+Done.
+Pose detection took 188.52 s.
+
+
+---------------------------------------------------------------------
+Compute angles for video v1.mp4 
+for ['Right ankle', 'Left ankle', 'Right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Trunk', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Code\CP\results...
+1 persons found.
+Person 0: Computing 2D joint and segment angles.
+Person 0: Saving csv angle file in D:\Code\CP\results\v1_BLAZEPOSE_angles.csv.
+Done.
+Joint and segment computation took 71.53 s.
+
+
+---------------------------------------------------------------------
+Detect pose for video test1.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\test1.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+Saving csv file in D:\Code\CP\results\test1_BLAZEPOSE_points.csv.
+Done.
+Pose detection took 262.23 s.
+
+
+---------------------------------------------------------------------
+Compute angles for video test1.mp4 
+for ['Right ankle', 'Left ankle', 'Right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Trunk', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Code\CP\results...
+1 persons found.
+Person 0: Computing 2D joint and segment angles.
+Person 0: Saving csv angle file in D:\Code\CP\results\test1_BLAZEPOSE_angles.csv.
+Done.
+Joint and segment computation took 76.49 s.
+
+
+---------------------------------------------------------------------
+Detect pose for video test1.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\test1.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+Saving csv file in D:\Code\CP\results\test1_BLAZEPOSE_points.csv.
+Done.
+Pose detection took 227.82 s.
+
+
+---------------------------------------------------------------------
+Compute angles for video test1.mp4 
+for ['Right ankle', 'Left ankle', 'Right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Trunk', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Code\CP\results...
+1 persons found.
+Person 0: Computing 2D joint and segment angles.
+Person 0: Saving csv angle file in D:\Code\CP\results\test1_BLAZEPOSE_angles.csv.
+Done.
+Joint and segment computation took 76.37 s.
+
+
+---------------------------------------------------------------------
+Detect pose for video test5.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\test5.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+
+
+---------------------------------------------------------------------
+Detect pose for video test5Trim.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\test5Trim.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+Saving csv file in D:\Code\CP\results\test5Trim_BLAZEPOSE_points.csv.
+Done.
+Pose detection took 427.41 s.
+
+
+---------------------------------------------------------------------
+Compute angles for video test5Trim.mp4 
+for ['Right ankle', 'Left ankle', 'Right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Trunk', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Code\CP\results...
+1 persons found.
+Person 0: Computing 2D joint and segment angles.
+Person 0: Saving csv angle file in D:\Code\CP\results\test5Trim_BLAZEPOSE_angles.csv.
+Done.
+Joint and segment computation took 148.90 s.
+
+
+---------------------------------------------------------------------
+Detect pose for video test3.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\test3.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+
+
+---------------------------------------------------------------------
+Detect pose for video test3.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\test3.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+Saving csv file in D:\Code\CP\results\test3_BLAZEPOSE_points.csv.
+Done.
+Pose detection took 208.57 s.
+
+
+---------------------------------------------------------------------
+Compute angles for video test3.mp4 
+for ['Right ankle', 'Left ankle', 'Right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Trunk', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Code\CP\results...
+1 persons found.
+Person 0: Computing 2D joint and segment angles.
+Person 0: Saving csv angle file in D:\Code\CP\results\test3_BLAZEPOSE_angles.csv.
+Done.
+Joint and segment computation took 79.04 s.
+
+
+---------------------------------------------------------------------
+Detect pose for video v3.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\v3.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+Saving csv file in D:\Code\CP\results\v3_BLAZEPOSE_points.csv.
+Done.
+Pose detection took 213.73 s.
+
+
+---------------------------------------------------------------------
+Compute angles for video v3.mp4 
+for ['Right ankle', 'Left ankle', 'Right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Trunk', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Code\CP\results...
+1 persons found.
+Person 0: Computing 2D joint and segment angles.
+Person 0: Saving csv angle file in D:\Code\CP\results\v3_BLAZEPOSE_angles.csv.
+Done.
+Joint and segment computation took 103.15 s.
+
+
+---------------------------------------------------------------------
+Detect pose for video test3.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\test3.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+
+
+---------------------------------------------------------------------
+Detect pose for video test3.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\test3.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+
+
+---------------------------------------------------------------------
+Detect pose for video test2.mp4
+---------------------------------------------------------------------
+Detecting 2D joint positions with BlazePose for D:\Code\CP\videos\test2.mp4.
+Only one person can be detected by BlazePose. No interpolation nor filtering options available. Not plotting available.
+Saving images and video in D:\Code\CP\results.
+Saving csv file in D:\Code\CP\results\test2_BLAZEPOSE_points.csv.
+Done.
+Pose detection took 194.34 s.
+
+
+---------------------------------------------------------------------
+Compute angles for video test2.mp4 
+for ['Right ankle', 'Left ankle', 'Right knee', 'Left knee', 'Right hip', 'Left hip', 'Right shoulder', 'Left shoulder', 'Right elbow', 'Left elbow']
+and ['Right foot', 'Left foot', 'Right shank', 'Left shank', 'Right thigh', 'Left thigh', 'Trunk', 'Right arm', 'Left arm', 'Right forearm', 'Left forearm'].
+---------------------------------------------------------------------
+Retrieving csv position files in D:\Code\CP\results...
+1 persons found.
+Person 0: Computing 2D joint and segment angles.
+Person 0: Saving csv angle file in D:\Code\CP\results\test2_BLAZEPOSE_angles.csv.
+Done.
+Joint and segment computation took 71.13 s.

@@ -1,0 +1,22 @@
+{
+  "Right ankle": ["RHeel", "RBigtoe", "RAnkle", "RKnee"],
+  "Left ankle": ["LHeel", "LBigToe", "LAnkle", "LKnee"],
+  "Right knee": ["RHip", "RKnee", "RAnkle"],
+  "Left knee": ["LHip", "LKnee", "LAnkle"],
+  "Right hip": ["RKnee", "RHip", "RShoulder"],
+  "Left hip": ["LKnee", "LHip", "LShoulder"],
+  "Right shoulder": ["RHip", "RShoulder", "RElbow"],
+  "Left shoulder": ["LHip", "LShoulder", "LElbow"],
+  "Right elbow": ["RWrist", "RElbow", "RShoulder"],
+  "Left elbow": ["LWrist", "LElbow", "LShoulder"],
+  "Right foot": ["RHeel", "RBigToe"],
+  "Left foot": ["LHeel", "LBigToe"],
+  "Right shank": ["RKnee", "RAnkle"],
+  "Left shank": ["LKnee", "LAnkle"],
+  "Right thigh": ["RHip", "RKnee"],
+  "Left thigh": ["LHip", "LKnee"],
+  "Right arm": ["RShoulder", "RElbow"],
+  "Left arm": ["LShoulder", "LElbow"],
+  "Right forearm": ["RElbow", "RWrist"],
+  "Left forearm": ["LElbow", "LWrist"]
+}
