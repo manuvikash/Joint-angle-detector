@@ -1,0 +1,62 @@
+video_file = "demo.mp4"
+
+[project]
+video_dir = "./videos"
+video_file = "CP1.mp4"
+result_dir = "./results"
+
+[pose]
+pose_algo = "BLAZEPOSE"
+
+[compute_angles]
+joint_angles = [ "Right ankle", "Left ankle", "Right knee", "Left knee", "Right hip", "Left hip", "Right shoulder", "Left shoulder", "Right elbow", "Left elbow",]
+segment_angles = [ "Right foot", "Left foot", "Right shank", "Left shank", "Right thigh", "Left thigh", "Trunk", "Right arm", "Left arm", "Right forearm", "Left forearm",]
+
+[pose_advanced]
+overwrite_pose = false
+save_vid = true
+save_img = true
+interp_gap_smaller_than = 5
+filter = true
+show_plots = false
+filter_type = "butterworth"
+
+[compute_angles_advanced]
+show_angles_on_img = true
+show_angles_on_vid = true
+filter = false
+show_plots = false
+filter_type = "butterworth"
+
+[pose.BLAZEPOSE]
+model_complexity = 2
+
+[pose.OPENPOSE]
+openpose_model = "BODY_25B"
+openpose_path = "/content/Sports2D/Sports2D_openpose"
+
+[pose_advanced.butterworth]
+order = 4
+cut_off_frequency = 6
+
+[pose_advanced.gaussian]
+sigma_kernel = 1
+
+[pose_advanced.loess]
+nb_values_used = 5
+
+[pose_advanced.median]
+kernel_size = 3
+
+[compute_angles_advanced.butterworth]
+order = 4
+cut_off_frequency = 6
+
+[compute_angles_advanced.gaussian]
+sigma_kernel = 1
+
+[compute_angles_advanced.loess]
+nb_values_used = 5
+
+[compute_angles_advanced.median]
+kernel_size = 3
