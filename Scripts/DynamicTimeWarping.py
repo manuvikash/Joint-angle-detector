@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from fastdtw import fastdtw
 import json
+import Normalize
 
 
 def prepare(filename):
@@ -33,22 +34,22 @@ def plotMapping(std, test, joint, path, title):
     data2 = prepare(test)
     angle1 = data1[joint].values
     angle2 = data2[joint].values
-    plt.figure(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(10, 5))
 
     # Plot both time series
-    plt.plot(angle1, label='Time Series 1', marker='o')
-    plt.plot(angle2, label='Time Series 2', marker='x')
+    ax.plot(angle1, label='Standard Time Series', marker='o')
+    ax.plot(angle2, label='Test Time Series', marker='x')
 
     # Draw lines between aligned points
     for a, b in path:
-        plt.plot([a, b], [angle1[a], angle2[b]],
-                 'k-', linewidth=0.4, alpha=0.5)
+        ax.plot([a, b], [angle1[a], angle2[b]], 'k-', linewidth=0.4, alpha=0.5)
 
-    plt.xlabel('Frame')
-    plt.ylabel('Joint-Angle')
-    plt.title(title)
-    plt.legend()
-    plt.show()
+    ax.set_xlabel('Frame')
+    ax.set_ylabel('Joint Angle')
+    ax.set_title(title)
+    ax.legend()
+
+    return fig
 
 
 def dtw(std, test):
@@ -60,19 +61,20 @@ def dtw(std, test):
     avgDist = 0
     avgSim = 0
     perJointSim = {}
+    graphs = []
     for i in jointAngles:
         distance, path, sim = applyDtw(std, test, i)
+        sim = Normalize.calcAvgSim(sim, test)
         avgDist += distance
         avgSim += sim
         perJointSim[i] = sim
 
-        plotMapping(std, test, i, path, i)
+        graphs.append(plotMapping(std, test, i, path, i))
 
     avgDist /= len(jointAngles)
-    avgSim /= len(jointAngles)
+    avgSim = avgSim/len(jointAngles)
 
-    return avgDist, avgSim, perJointSim
-
+    return avgDist, avgSim, perJointSim, graphs
 
 # std = 'v3'
 # test = 'test3'

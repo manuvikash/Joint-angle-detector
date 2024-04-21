@@ -33,7 +33,16 @@
     "Left thigh"
   ],
   "test1": ["Right hip", "Left hip", "Right shoulder", "Left shoulder"],
+  "CP1": ["Right hip", "Left hip", "Right shoulder", "Left shoulder"],
   "test2": [
+    "Right knee",
+    "Left knee",
+    "Right hip",
+    "Left hip",
+    "Right thigh",
+    "Left thigh"
+  ],
+  "CP2": [
     "Right knee",
     "Left knee",
     "Right hip",
@@ -50,6 +59,14 @@
     "Left thigh"
   ],
   "test3": [
+    "Right knee",
+    "Left knee",
+    "Right hip",
+    "Left hip",
+    "Right thigh",
+    "Left thigh"
+  ],
+  "CP3": [
     "Right knee",
     "Left knee",
     "Right hip",

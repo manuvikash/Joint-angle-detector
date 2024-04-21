@@ -5,6 +5,7 @@ from scipy.fftpack import fft
 from scipy.signal import butter, filtfilt
 from scipy.integrate import simpson
 import json
+import Normalize
 
 def extractData(landmark_name, landmark_dict, data):
     if landmark_name not in landmark_dict:
@@ -46,6 +47,7 @@ def getJerk(filename):
     jointMapFile.close()
     jointList = fileMap[filename]
     landmarks = []
+
     for i in jointList:
         landmarks += jointMap[i]
 
@@ -69,6 +71,16 @@ def getJerk(filename):
         jerk_metric = calculate_jerk(speed, fs)
         jerkList[point] = jerk_metric
 
+    smoothnessPerJoint = {}
+    for i in jointList:
+        jointJerk = 0
+        landmarkCount = 0
+        for j in jerkList.keys():
+            if j in jointMap[i]:
+                jointJerk += jerkList[j]
+                landmarkCount += 1
+        smoothnessPerJoint[i] =(1 / (1 + Normalize.getNormalizedValue(filename,jointJerk/landmarkCount))) * 10 ** 11 
+
     jerkList = sorted(jerkList.items(), key=lambda x: x[1])
     totalJerk = 0
     for i in jerkList:
@@ -77,12 +89,12 @@ def getJerk(filename):
 
 
     video_duration = time.iloc[-1] - time.iloc[0]
-    normalized_totalJerk = totalJerk / video_duration
+    normalized_totalJerk = Normalize.getNormalizedValue(filename, totalJerk / video_duration)
     normalized_smooth = (1 / (1 + normalized_totalJerk)) * 10 ** 10
 
-    for key, value in jerkList:
-        print(f"{key}: {value}")
+    # for key, value in jerkList:
+    #     print(f"{key}: {value}")
 
-    return normalized_totalJerk, normalized_smooth * 0.75
+    return normalized_totalJerk, normalized_smooth * 0.75, smoothnessPerJoint
 
 
